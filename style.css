@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+
+:root {
+  --primary: #198754;
+  --dark: #21252f;
+  --body: #888;
+  --white: #ffffff;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Sora, "sans-serif";
+  line-height: 1.7;
+  color: var(--body);
+}
+
+h1, h2, h3, h4, h5, h6 
+.display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery img {
+    width: 100%;
+    height: 450px; /* Adjust this based on your preferred size */
+    object-fit: cover;
+    padding-left: 20px;
+  }  
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 1;
+}
+
+.hero {
+    background-color: #e6e6e6;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(146, 146, 146, 0.8);
+    z-index: -1;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content .intro {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sections {
+    margin-bottom: 40px;
+}
+
+.sections-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sections-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sections-text {
+    flex: 1;
+}
+
+.sections h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.sections p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.about::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.about:hover .iconbox {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.about:hover h5, 
+.about:hover p {
+    color: var(--white);
+}
+
+.about:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+.col-img {
+    background-image: url(PNCC.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    padding-bottom: 2px;
+}
+
+.text-center{
+    padding: 10px;
+}
+
+.cards {
+    background-color: #f0f0f0;
+    border: none;
+    box-shadow: 0 4px 8px rgba(56, 56, 56, 0.9);
+    transition: transform 0.2s;
+    text-align: center;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.cards-header {
+    background-color: #d4edda;
+    color: #0e7927;
+    font-weight: bold;
+    border-bottom: none;
+    border-radius: 3px;
+}
+
+.cards-img-top {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+  }
+.cards-title{
+    padding-bottom: 10px;
+}
+
+form input.form-control {
+    height: 56px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* placement of the accordion */
+.faqcontainer{   
+    padding: 200px;
+}
+/*position of the FAQ */
+.faqs {
+    text-align: center;
+    font-size: 40px;
+}
+
+/*Website devs css*/
+.cardz, .cardz img, .cardz hr {            
+    border: 3px solid lightgray;
+    transition: 0.3s ease-in-out;
+}
+
+.cardz:hover {
+    transform: translateY(-5px);
+}
+
+.cardz:hover, .card:hover hr, .card:hover img {
+    border-color: rgb(50, 131, 50);
+}
+
+.bi {
+    color: gray;            
+    transition: 0.3s ease;
+}
+
+.bi:hover {
+    color: rgb(41, 110, 41);
+}
+
+.bg-image {
+    background-image: url('https://pinnacle.pnc.edu.ph/img/pnc-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Links css*/
+.cardd {
+    margin-bottom: 20px; /* Spacing between cards */
+}
+
+.card-img-top {
+    margin-top: 10px;
+}
+
+/*Footer*/
+.footer {
+    box-shadow: var(--box-shadow);
+}
+
+.footer-top {
+    padding-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(172, 172, 172);
+}
